@@ -40,6 +40,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{0B1FB3FD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F1048000-2249-46DA-B11C-42E56E0E66A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B81A53DC-E89B-46E9-A7BE-66AF015D3D09}"
+	ProjectSection(SolutionItems) = preProject
+		..\swd-prn-prm-backend-main\Apis\Infrastructure\DependencyInjection.cs = ..\swd-prn-prm-backend-main\Apis\Infrastructure\DependencyInjection.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,7 +60,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {F19EF66D-ACA4-423F-9A71-2A9DFC98D245}
 		{EB82FCA4-D105-4F8C-A6DE-CB79757C0A80} = {F19EF66D-ACA4-423F-9A71-2A9DFC98D245}
 		{6C3D6245-0F35-42C9-9558-2C0520483496} = {EB82FCA4-D105-4F8C-A6DE-CB79757C0A80}
 		{D1A3F3FF-0F50-45CE-A05F-F69AB47735AA} = {6C3D6245-0F35-42C9-9558-2C0520483496}

@@ -1,11 +1,11 @@
 using WebAPI;
-
+//using Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddWebAPIService(builder);
-builder.Services.AddInfractstructure(builder.Configuration);
+//builder.Services.AddInfractstructure(builder.Configuration);
 
 
 var app = builder.Build();
