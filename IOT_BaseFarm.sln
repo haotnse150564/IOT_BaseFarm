@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -9,19 +9,60 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{F19EF66D-ACA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{EB82FCA4-D105-4F8C-A6DE-CB79757C0A80}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6B9596D5-304C-4521-AFDC-FD1BC0D20196}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6C3D6245-0F35-42C9-9558-2C0520483496}"
+	ProjectSection(SolutionItems) = preProject
+		AccountServicesInterface.cs = AccountServicesInterface.cs
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{1EA41EA0-8DC4-4B19-A6CD-75182A496CF0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implement", "Implement", "{D1A3F3FF-0F50-45CE-A05F-F69AB47735AA}"
+	ProjectSection(SolutionItems) = preProject
+		AccountServices.cs = AccountServices.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{FEB39A2B-0B1B-4AF2-87B0-D278B2A42F59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Response", "Response", "{07D4445F-DE8F-4016-9969-4C403AA49CFF}"
+	ProjectSection(SolutionItems) = preProject
+		AccountResponesViewModel.cs = AccountResponesViewModel.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Request", "Request", "{93F6B35C-EB5A-4DC5-9416-1C17C5E4AA98}"
+	ProjectSection(SolutionItems) = preProject
+		AccountRequestViewModel.cs = AccountRequestViewModel.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{0B1FB3FD-F15D-4A02-9BC0-A07FCAAA8379}"
+	ProjectSection(SolutionItems) = preProject
+		GenerateJWTString.cs = GenerateJWTString.cs
+		..\swd-prn-prm-backend-main-Apis-Application\Apis\Application\Utils\JWTUtils.cs = ..\swd-prn-prm-backend-main-Apis-Application\Apis\Application\Utils\JWTUtils.cs
+		..\swd-prn-prm-backend-main-Apis-Application\Apis\Application\Utils\StringUtils.cs = ..\swd-prn-prm-backend-main-Apis-Application\Apis\Application\Utils\StringUtils.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F1048000-2249-46DA-B11C-42E56E0E66A9}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1048000-2249-46DA-B11C-42E56E0E66A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1048000-2249-46DA-B11C-42E56E0E66A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1048000-2249-46DA-B11C-42E56E0E66A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1048000-2249-46DA-B11C-42E56E0E66A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {F19EF66D-ACA4-423F-9A71-2A9DFC98D245}
 		{EB82FCA4-D105-4F8C-A6DE-CB79757C0A80} = {F19EF66D-ACA4-423F-9A71-2A9DFC98D245}
-		{6B9596D5-304C-4521-AFDC-FD1BC0D20196} = {F19EF66D-ACA4-423F-9A71-2A9DFC98D245}
-		{1EA41EA0-8DC4-4B19-A6CD-75182A496CF0} = {F19EF66D-ACA4-423F-9A71-2A9DFC98D245}
+		{6C3D6245-0F35-42C9-9558-2C0520483496} = {EB82FCA4-D105-4F8C-A6DE-CB79757C0A80}
+		{D1A3F3FF-0F50-45CE-A05F-F69AB47735AA} = {6C3D6245-0F35-42C9-9558-2C0520483496}
+		{FEB39A2B-0B1B-4AF2-87B0-D278B2A42F59} = {EB82FCA4-D105-4F8C-A6DE-CB79757C0A80}
+		{07D4445F-DE8F-4016-9969-4C403AA49CFF} = {FEB39A2B-0B1B-4AF2-87B0-D278B2A42F59}
+		{93F6B35C-EB5A-4DC5-9416-1C17C5E4AA98} = {FEB39A2B-0B1B-4AF2-87B0-D278B2A42F59}
+		{0B1FB3FD-F15D-4A02-9BC0-A07FCAAA8379} = {EB82FCA4-D105-4F8C-A6DE-CB79757C0A80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73468E63-C5FC-4CE7-A03D-23EF7EC1E0BA}
